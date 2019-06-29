@@ -1,0 +1,112 @@
+/*Experimento sacado del siguente enlace
+    https://www.youtube.com/watch?v=16XIsSHgc0o*/
+
+/*@import url(https://fonts.googleapis.com/css?family=Akronim);*/
+
+/*Fondo de pantalla*/
+
+/*body {
+    background: orangered url(img/fondo.jpg) center center cover no-repeat fixed;    
+    }*/
+
+
+    /*Css para el formularo*/
+    /*<style type="text/css">*/
+        #register_form fieldset:not(:first-of-type) {
+            display: none;
+        }
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: gray;
+      
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
+
+.section{
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    text-align: center;
+}
+
+.login-form{
+    position: relative;
+    box-sizing: border-box;
+    padding: 60px 30px;
+    transition: .5s;
+}
+
+.login-form:hover{
+    background: rgb(7, 7, 7);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 2);
+    border-radius: 25px 25px 25px 25px;
+    -moz-border-radius: 25px 25px 25px 25px;
+    -webkit-border-radius: 25px 25px 25px 25px;
+}
+
+.login-form{
+    margin: 0 0 20px;
+    color: #fff;
+    font-size: 30px;
+    text-transform  : none;
+}
+
+.login-form input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    outline: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: none;
+    border:none;
+    background: rgba(225, 225, 225, 1);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.login-form input::placeholder{
+    color: rgba(102, 101, 101, 0.897);
+}
+
+.login-form input[type="submit"]{
+    background: #0081ff;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;    
+}
+
+.login-form a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: none;
+    font-size: 15px;
+}
+
+.login-form input[type="submit"]:hover{
+    background: #005aca;
+}
+
+/*Estilos Bootstrap*/
+
+
+    .navbar{
+            text-align: center;
+           }
+
+    .nav{
+        text-align: center;
+    }

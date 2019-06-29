@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="jquery3.js"></script>
+    <script type="text/javascript" src="form.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <link rel="icon" href="2.ico">
+
+</head>
+
+<body>
+
+    
+
+
+    <div class="container">
+        <div class="login-form">
+        <h2>Bienvenidos a Conito</h2>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0"
+                aria-valuemax="100"></div>
+        </div>
+        <div class="alert alert-success hide"></div>
+        <form id="register_form" novalidate action="multi_form_action.php" method="post">
+<!--Formulario Datos de Usuario-->
+            <fieldset>
+                <h2>Datos de usuario</h2>                
+                <div class="form-row">     
+                    <div class="form-group col-sm-6">
+                        <label for="">Nombres</label>
+                        <input type="text" class="form-control" required id="" name="" placeholder="Nombres">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="">Apellidos</label>
+                        <input type="text" class="form-control" name="" id="" placeholder="Apellidos">
+                    </div>
+                </div>
+                                                
+                <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="">Correo</label>
+                    <input type="email" class="form-control" required id="" name="" placeholder="Correo">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="">Contraseña</label>
+                    <input type="password" class="form-control" required id="" name="" placeholder="Contraseña">                
+                </div>
+                </div>
+
+                <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="">Teléfono</label>
+                    <input type="tel" class="form-control" required id="" name="" placeholder="Teléfono">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="">Genero</label>
+                    <input type="select" class="form-control" required id="" name="" placeholder="Genero">                
+                </div>
+                </div>
+
+                <a>Escoga según su vehículo</a> <br>
+                <div class="form-row">
+                <input type="button" class="next-form btn btn-info col-sm-6" value="Moto"/>
+                <input type="button" class="next-form btn btn-info col-sm-6" value="Bicicleta"/>
+                </div>
+            </fieldset>
+
+<!--Formulario Moto-->
+            <fieldset>
+                <h2>Datos Moto</h2>
+                <div class="form-group">
+                    <label for="first_name">Placa</label>
+                    <input type="text" class="form-control" name="" id="" placeholder="Placa">
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Color</label>
+                    <input type="text" class="form-control" name="" id="" placeholder="Color">
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Marca</label>
+                    <input type="text" class="form-control" name="" id="" placeholder="Marca">
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Cilindraje</label>
+                    <input type="text" class="form-control" name="" id="" placeholder="Cilindraje">
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Modelo</label>
+                    <input type="text" class="form-control" name="" id="" placeholder="Modelo">
+                </div>
+
+                <input type="button" name="previous" class="previous-form btn btn-default" value="Anterior" />
+                <input type="button" name="next" class="next-form btn btn-info" value="Siguiente" />
+            </fieldset>
+
+<!--Formulario Bicicleta
+            <fieldset>
+                <h2>Datos Bicicleta</h2>
+                <div class="form-group">
+                    <label for="first_name">Número de marco</label>
+                    <input type="text" class="form-control" name="" id="" placeholder="Número de marco">
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Color</label>
+                    <input type="text" class="form-control" name="" id="" placeholder="Color">
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Marca</label>
+                    <input type="text" class="form-control" name="" id="" placeholder="Marca">
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Tamaño del rin</label>
+                    <input type="text" class="form-control" name="" id="" placeholder="Tamaño del rin">
+                </div>
+                
+                <input type="button" name="previous" class="previous-form btn btn-default" value="Anterior" />
+                <input type="button" name="next" class="next-form btn btn-info" value="Siguiente" />
+            </fieldset>
+
+--> 
+
+<!--Formulario Carné-->
+            <fieldset>
+                <h2>Datos Carné</h2>
+                <div class="form-group">
+                    <label for="">Ficha</label>
+                    <input type="text" class="form-control" required id="" name="" placeholder="Ficha">
+                </div>
+                <div class="form-group">
+                    <label for="">Rh</label>
+                    <input type="text" class="form-control" required id="" name="" placeholder="Rh">
+                </div>
+                <div class="form-group">
+                    <label for="">Jornada</label>
+                    <input type="text" class="form-control" required id="" name="" placeholder="Jornada">
+                </div>
+                <div class="form-group">
+                    <label for="">Rol en el SENA</label>
+                    <input type="text" class="form-control" required id="" name="" placeholder="Rol">
+                </div> 
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea class="form-control" name="address" placeholder="Communication Address"></textarea>
+                </div>
+                <input type="button" name="previous" class="previous-form btn btn-default" value="Previous" />
+                <input type="submit" name="submit" class="submit btn btn-success" value="Submit" />
+            </fieldset>
+        </form>
+    
+    </div>
+    </div>
+
+
+    <script src="js/bootstrap.js"></script>
+    
+
+
+</body>
+
+</html>

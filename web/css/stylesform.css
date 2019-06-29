@@ -1,0 +1,5 @@
+/*Css para el formularo*/
+    /*<style type="text/css">*/
+        #register_form fieldset:not(:first-of-type) {
+            display: none;
+        }
